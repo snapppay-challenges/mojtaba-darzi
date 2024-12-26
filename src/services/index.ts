@@ -1,0 +1,1 @@
+export { fetchContacts } from "./fetch-contacts"
