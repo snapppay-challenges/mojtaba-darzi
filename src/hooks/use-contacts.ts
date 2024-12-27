@@ -43,7 +43,7 @@ const useContacts = () => {
             })
             .catch(() => setError(true))
             .finally(() => setLoading(false));
-    }, [LIMIT, skip, debouncedQuery]);
+    }, [skip, debouncedQuery]);
 
     return { contacts, frequentContacts, total, loading, error, handleLoadMore, handleSearchChange, query };
 };
