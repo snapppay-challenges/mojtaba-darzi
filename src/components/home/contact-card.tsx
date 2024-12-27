@@ -26,10 +26,10 @@ const ContactCard = memo(({ contact: { avatar, first_name, id, phone, last_name 
                 /> : <FaRobot className="text-gray-300 w-20 h-20 sm:w-28 sm:h-28 md:h-32 md:w-32 p-4 bg-white group-hover:bg-transparent" />}
             </div>
             <div className="flex flex-col justify-center">
-                <h3 className="text-xl sm:text-2xl text-center font-medium">{truncate(`${first_name} ${last_name}`, 20)}</h3>
+                <h2 className="text-xl sm:text-2xl text-center font-medium">{truncate(`${first_name} ${last_name}`, 20)}</h2>
                 <div className="flex gap-1 justify-start items-center sm:justify-center mt-1">
                     <CiPhone className="w-4 h-4 sm:w-5 sm:h-5" color="gray" />
-                    <h3 className="text-sm md:text-base font-normal text-gray-700">{phone || NOT_AVAILABLE}</h3>
+                    <p className="text-sm md:text-base font-normal text-gray-700">{phone || NOT_AVAILABLE}</p>
                 </div>
             </div>
         </Link>
