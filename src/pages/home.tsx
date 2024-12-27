@@ -3,7 +3,6 @@ import {
     AllContactsSection,
     BackToTop,
     FrequentlyVisitedSection,
-    Header,
     Layout,
     LoadMoreButton,
     NoResult,

@@ -1,12 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import React, { useCallback } from "react";
+import React from "react";
 
 const NoFound: React.FC = () => {
     const navigate = useNavigate();
-
-    const goHome = useCallback(() => {
-        navigate("/");
-    }, []);
+    const goHome = () => navigate("/");
 
     return (
         <div className="w-full flex flex-col justify-center items-center h-[320px] text-center">

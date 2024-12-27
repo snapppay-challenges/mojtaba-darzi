@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { SlArrowUp } from "react-icons/sl";
 
 const BackToTop = memo(() => {
@@ -17,8 +17,8 @@ const BackToTop = memo(() => {
     return (
         <button
             className={`w-14 h-14 fixed bottom-[20px] right-[20px] bg-gray-700 shadow-lg 
-            hover:shadow-2xl rounded-full flex justify-center items-center transition group hover:bg-black
-            ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}`}
+                hover:shadow-2xl rounded-full flex justify-center items-center transition group hover:bg-black
+                ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}`}
             onClick={goToTop}
             aria-label="Back to top"
         >

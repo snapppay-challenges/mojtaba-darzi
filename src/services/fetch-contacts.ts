@@ -1,7 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../contstant";
 import { ContactResponseType } from "@/types";
-import { firstLetterToUpperCase } from "../utils";
 
 export const fetchContacts = async (
     limit = 10, // number of contacts per request.
@@ -12,8 +11,8 @@ export const fetchContacts = async (
     // construct filter criteria for API query.
     const where = JSON.stringify({
         or: [
-            { first_name: { contains: firstLetterToUpperCase(query) } },
-            { last_name: { contains: firstLetterToUpperCase(query) } },
+            { first_name: { contains: query } },
+            { last_name: { contains: query } },
             { phone: { contains: query } },
         ],
     });
