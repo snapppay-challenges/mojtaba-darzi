@@ -20,7 +20,7 @@ const AvatarSection = memo(({ avatar, first_name, last_name, gender, createdAt, 
         <div className="rounded-full border-2 md:border-2 border-gray-200 w-[160px] h-[160px] overflow-hidden md:w-[240px] md:h-[240px]">
             {loading
                 ? <div className="animate-pulse bg-gray-200 rounded-full w-full h-full" />
-                : avatar ? <img src={avatar} alt={first_name || ""} className="w-full h-full" /> : <FaRobot className="text-gray-300 w-full h-full p-8" />}
+                : avatar ? <img src={avatar} alt={first_name || ""} className="w-full h-full" loading="eager" /> : <FaRobot className="text-gray-300 w-full h-full p-8" />}
         </div>
         <div className="flex flex-col items-center">
             {loading
