@@ -69,3 +69,38 @@ API
 Testing
     Run the tests using Jest:
     npm test
+
+### Code review checklist
+
+- [ ] Main functionalities: These items SHOULD work correctly
+    - [ ] List view
+        - [ ] Show list of contacts properly with image, name, and tel and be clickable
+        - [ ] Handle server errors
+    - [ ] Pagination
+        - [ ] Infinite scroll/page number button
+        - [ ] Handle loading and end of the list
+    - [ ] Detail view
+        - [ ] Handle routing properly
+        - [ ] Handle server errors
+        - [ ] Handle routing error on manually changing the detail id
+    - [ ] Search
+        - [ ] Using Debounce
+        - [ ] Handle multiple requests
+        - [ ] Search by first name, last name, and telephone
+    - [ ] Most visited contacts
+        - [ ] Handle incorrect items in the list (e.g., when you manually change the detail page address)
+- [ ] Clean code:
+    - [ ] Well-structured project
+    - [ ] Separate concerns
+    - [ ] Component-thinking
+    - [ ] Simple to understand and less complexity
+    - [ ] No over-engineering
+    - [ ] Avoid bad-practice patterns (e.g., multi re-rendering components, useEffect chaining)
+    - [ ] No acute performance issues
+    - [ ] Using pure CSS in a good way / Using CSS frameworks like Tailwind without extra complexity
+- [ ] Plus points and nice to have: DON’T judge just based on lack of these items; they should be better compared to other competitors:
+    - [ ] Creativity or eye-catching design
+    - [ ] Using absolute path
+    - [ ] Using ESLint
+    - [ ] Using TypeScript in a best practice way (otherwise is a negative point)
+    - [ ] Using (unit/e2e) Test in an applicable way not just writing some samples
